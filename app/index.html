@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · 55 trophies, cited guides, tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies: a cited guide for every trophy, a roadmap to the platinum, missable flags, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div>
+      <p class="kicker">Grand Theft Auto VI · PlayStation 5 · Unofficial fan guide</p>
+      <h1>Leonida Trophy Guide</h1>
+      <p class="lede">Every one of the 55 trophies, with a guide in our own words that cites its sources — plus a roadmap to the platinum and a tracker that remembers your progress.</p>
+    </div>
+    <div class="progress-card" id="progressCard">
+      <p class="progress-big"><span id="earnedCount">0</span><span class="of"> / 55 earned</span></p>
+      <div class="bar"><div class="bar-fill" id="progressFill" style="width:0%"></div></div>
+      <p class="grade-counts" id="gradeCounts">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+      <p class="meta">~200 hours · Difficulty 4/10 · 1 playthrough · 0 online trophies</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+    <h2>Roadmap to the platinum</h2>
+    <p class="section-note">One playthrough, no mission replay, cheats disable trophies. Keep a manual save at the start of each chapter. Click any trophy chip to open its guide.</p>
+    <div class="stages" id="stages"></div>
+    <p class="missable-banner" id="missableBanner">⚠ One trophy can be missed: <button type="button" class="chip-link" data-trophy="28">Positive Mental Attitude</button> — meditate with Lucia on Jason's balcony in Chapter 1, right after the mission Down to Earth. It is the only thing in the game that might lock you out of the platinum.</p>
+  </section>
+
+  <section class="toolbar" aria-label="Filters and tracker tools">
+    <div class="toolbar-row">
+      <label class="search">Search <input id="search" type="search" placeholder="Trophy, mission, activity…" autocomplete="off"></label>
+      <label>Grade
+        <select id="gradeFilter">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label>Progress
+        <select id="statusFilter">
+          <option value="all">Earned + unearned</option>
+          <option value="earned">Earned only</option>
+          <option value="unearned">Not earned yet</option>
+        </select>
+      </label>
+      <label class="spoiler-toggle"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+    </div>
+    <div class="toolbar-row">
+      <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+      <div class="io">
+        <button id="exportBtn" type="button">Export progress</button>
+        <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+        <button id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+    <p class="list-meta"><span id="shownCount">55</span> of 55 trophies shown · <span id="spoilerNote">Spoiler mode on: story trophies stay hidden until earned.</span></p>
+  </section>
+
+  <div class="guide-grid">
+    <section class="list-col" aria-label="Trophy checklist">
+      <ol class="trophy-list" id="trophyList"></ol>
+      <p class="empty" id="emptyState" hidden>No trophies match these filters. Try clearing the search or choosing another kind.</p>
+    </section>
+    <aside class="detail-col" aria-label="Trophy guide">
+      <article class="detail" id="detail"></article>
+    </aside>
+  </div>
+
+  <section class="sources-note">
+    <h2>Where the facts come from</h2>
+    <p>Every guide names its sources beside it. The main source is <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a>, cross-checked against <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer</a>, <a href="https://www.pushsquare.com/guides/gta-6-trophy-guide-and-roadmap">Push Square</a>, <a href="https://gtaspotter.com/en/guides/gta-6-trophies-and-achievements/">GTASpotter</a> and <a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">EGamers</a>. Trophy names and descriptions are the official PlayStation list, as those outlets agree on it. Guides are written for this page in our own words; a source is cited, never copied. Two trophies are marked unconfirmed where no verified method exists yet (Bad Luck, I Guess; the exact animal for Fair Game). Guide data as of 20 November 2026.</p>
+    <p class="disclaimer">Unofficial fan guide. Not affiliated with Rockstar Games, Take-Two Interactive or PlayStation. No Rockstar artwork, logos or game screenshots are used here. This page works offline and stores your checklist only in your own browser.</p>
+  </section>
+</main>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
